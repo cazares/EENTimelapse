@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1ED47B1A474C3F83AE64CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9589CD8922554E2D95EA7760 /* libPods.a */; };
 		FBC38DF61937DBB400B07AA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC38DF51937DBB400B07AA3 /* Foundation.framework */; };
 		FBC38DF91937DBB400B07AA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC38DF81937DBB400B07AA3 /* main.m */; };
 		FBC38DFD1937DBB400B07AA3 /* EENTimelapse.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FBC38DFC1937DBB400B07AA3 /* EENTimelapse.1 */; };
+		FBC38E051937DD5E00B07AA3 /* EENTimelapseController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC38E041937DD5E00B07AA3 /* EENTimelapseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		75A4CE52148A452EAFF9556A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		9589CD8922554E2D95EA7760 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC38DF21937DBB400B07AA3 /* EENTimelapse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EENTimelapse; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC38DF51937DBB400B07AA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBC38DF81937DBB400B07AA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBC38DFB1937DBB400B07AA3 /* EENTimelapse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EENTimelapse-Prefix.pch"; sourceTree = "<group>"; };
 		FBC38DFC1937DBB400B07AA3 /* EENTimelapse.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = EENTimelapse.1; sourceTree = "<group>"; };
+		FBC38E031937DD5E00B07AA3 /* EENTimelapseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EENTimelapseController.h; sourceTree = "<group>"; };
+		FBC38E041937DD5E00B07AA3 /* EENTimelapseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EENTimelapseController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC38DF61937DBB400B07AA3 /* Foundation.framework in Frameworks */,
+				CC1ED47B1A474C3F83AE64CD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +58,7 @@
 				FBC38DF71937DBB400B07AA3 /* EENTimelapse */,
 				FBC38DF41937DBB400B07AA3 /* Frameworks */,
 				FBC38DF31937DBB400B07AA3 /* Products */,
+				75A4CE52148A452EAFF9556A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				FBC38DF51937DBB400B07AA3 /* Foundation.framework */,
+				9589CD8922554E2D95EA7760 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -74,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				FBC38DF81937DBB400B07AA3 /* main.m */,
+				FBC38E031937DD5E00B07AA3 /* EENTimelapseController.h */,
+				FBC38E041937DD5E00B07AA3 /* EENTimelapseController.m */,
 				FBC38DFC1937DBB400B07AA3 /* EENTimelapse.1 */,
 				FBC38DFA1937DBB400B07AA3 /* Supporting Files */,
 			);
@@ -95,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBC38E001937DBB400B07AA3 /* Build configuration list for PBXNativeTarget "EENTimelapse" */;
 			buildPhases = (
+				AC7745D99CEE4D8DA0E9EBC7 /* Check Pods Manifest.lock */,
 				FBC38DEE1937DBB400B07AA3 /* Sources */,
 				FBC38DEF1937DBB400B07AA3 /* Frameworks */,
 				FBC38DF01937DBB400B07AA3 /* CopyFiles */,
+				D365756883674052B986335B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,11 +147,45 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC7745D99CEE4D8DA0E9EBC7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D365756883674052B986335B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBC38DEE1937DBB400B07AA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC38E051937DD5E00B07AA3 /* EENTimelapseController.m in Sources */,
 				FBC38DF91937DBB400B07AA3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +265,7 @@
 		};
 		FBC38E011937DBB400B07AA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A4CE52148A452EAFF9556A /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EENTimelapse/EENTimelapse-Prefix.pch";
@@ -227,6 +275,7 @@
 		};
 		FBC38E021937DBB400B07AA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75A4CE52148A452EAFF9556A /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EENTimelapse/EENTimelapse-Prefix.pch";
@@ -253,6 +302,7 @@
 				FBC38E021937DBB400B07AA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

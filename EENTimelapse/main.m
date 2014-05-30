@@ -7,16 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EENTimelapseController.h"
 
 int main(int argc, const char * argv[])
 {
-
-  @autoreleasepool {
-      
-      // insert code here...
-      NSLog(@"Hello, World!");
-      
+  @autoreleasepool {    
+    EENTimelapseController *controller = [[EENTimelapseController alloc] init];
+    [controller authenticateWithUsername:@"[YOUR-USERNAME]" password:@"[YOUR-PASSWORD]"];
+    [[NSRunLoop currentRunLoop] run];
   }
-    return 0;
+  return 0;
 }
-
